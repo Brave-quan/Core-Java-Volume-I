@@ -18,9 +18,18 @@ double>float>long>int
 
 String拼接方式:
 使用“+”拼接
-StringBuild的append（）方法
+StringBuilder的append（）方法
 静态拼接方法：
 join（""，"a","b"）=》ab
 join（"/","a","b"）=>a/b
 
-String忽略大小写检测方法：equalsIgnoreCase()
+StringAPI:
+忽略大小写检测方法：boolean equalsIgnoreCase(String other)
+排序（字母）：int compareTo(String other) 字符串位于other之前返回负数，相反返回正数，相等返回0
+以prefix开头：boolean startsWith(String prefix)
+以suffix结尾：boolean endswith(String suffix)
+用界定符拼接字符串并返回：String join("/","a","b")=》a/b
+改小写：String toLowerCase()
+改大写：String toUpperCase()
+
+Math.random():返回一个0到1（包含0，不包含1）的随机浮点数，用Math.random()*n=>0到n-1的随机数
